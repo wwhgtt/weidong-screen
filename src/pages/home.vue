@@ -60,10 +60,10 @@ export default {
   },
   mounted() {
     console.log(BMPGL)
-    // const mapUnit = BMPGL(this.mapAK); // 加载引入BMap
-    // mapUnit.then(() => {
-    //   this.initMap();
-    // });
+    const mapUnit = BMPGL(this.mapAK); // 加载引入BMap
+    mapUnit.then(() => {
+      this.initMap();
+    });
   },
   methods: {
     initMap() {
