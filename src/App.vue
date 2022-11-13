@@ -19,8 +19,12 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #0e3155;
 }
 body {
+  margin: 0;
+}
+p {
   margin: 0;
 }
 </style>
