@@ -111,9 +111,9 @@ export default {
           });
           this.map.addOverlay(prism);
         }
+        // 地图倾斜25度
+        this.map.setTilt(25);
       });
-      // 地图倾斜25度
-      this.map.setTilt(25);
     },
     // 深圳市添加各个区的轮廓
     boundaryFun(name,fillColor) {
