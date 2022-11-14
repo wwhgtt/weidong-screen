@@ -43,15 +43,13 @@ export default {
           return '星期日'
       }
     },
-    timeFormate(timeStamp) {
-      let hh = new Date(timeStamp).getHours() < 10 ? "0" + new Date(timeStamp).getHours(): new Date(timeStamp).getHours();
-      let mm = new Date(timeStamp).getMinutes() < 10 ? "0" + new Date(timeStamp).getMinutes(): new Date(timeStamp).getMinutes();
-      let ss = new Date(timeStamp).getSeconds() < 10 ? "0" + new Date(timeStamp).getSeconds(): new Date(timeStamp).getSeconds();
-      this.nowTime = hh + ":" + mm + ':' + ss;
+    timeFormate() {
+      
     },
     getTimes() {
-      this.timeFormate(new Date());
-      // setInterval(() => this.getTimes(), 1000);
+      setInterval(() => {
+        this.nowTime = moment().format('hh:mm:ss');
+      }, 1000);
     }
   }
 }
