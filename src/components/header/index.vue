@@ -51,7 +51,7 @@ export default {
     },
     getTimes() {
       this.timeFormate(new Date());
-      setInterval(() => this.getTimes(), 1000);
+      // setInterval(() => this.getTimes(), 1000);
     }
   }
 }
